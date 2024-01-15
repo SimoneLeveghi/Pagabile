@@ -23,6 +23,6 @@ public class Servizio implements Pagabile {
 
     @Override
     public double effettuaPagamento(String modalita, double saldo) {
-        return 0;
+        return saldo - calcolaPrezzo(modalita);
     }
 }
