@@ -3,6 +3,7 @@ public class Servizio implements Pagabile {
 
     public Servizio(float costo) throws Exception {
         if(costo <= 0) throw new Exception("Costo invalido");
+        this.costo = costo;
     }
 
     @Override
